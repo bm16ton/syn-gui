@@ -11,12 +11,12 @@ MAIN_DIALOG='
 			</text>
 			<comboboxentry>
 				<variable>COMBOBOX1</variable>
-                <input>./synlist</input>
+                <input>/usr/share/syngui/synlist</input>
                 <action signal="changed">refresh:'COMBOBOX2'</action>
 			</comboboxentry>
 			<entry>
 				<variable>COMBOBOX2</variable>
-                <input>./synvar</input>
+                <input>/usr/share/syngui/synvar</input>
 			</entry>
 			<button>
 			<label>Apply</label>
