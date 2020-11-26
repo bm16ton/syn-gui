@@ -1,0 +1,2 @@
+#!/bin/bash
+synclient | awk '{print $1}' | grep -v "Parameter"

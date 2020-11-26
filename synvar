@@ -1,0 +1,2 @@
+#!/bin/bash
+synclient | grep $COMBOBOX1 | awk '{print $3}'

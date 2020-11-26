@@ -1,0 +1,39 @@
+#!/bin/sh
+
+GTKDIALOG=gtkdialog
+
+MAIN_DIALOG='
+<window>
+	<vbox>
+		<hbox>
+			<text>
+				<label>Synaptic Parameter:</label>
+			</text>
+			<comboboxentry>
+				<variable>COMBOBOX1</variable>
+                <input>./synlist</input>
+                <action signal="changed">refresh:'COMBOBOX2'</action>
+			</comboboxentry>
+			<entry>
+				<variable>COMBOBOX2</variable>
+                <input>./synvar</input>
+			</entry>
+			<button>
+			<label>Apply</label>
+			<action>synclient $COMBOBOX1=$COMBOBOX2</action>
+			<action>refresh:'COMBOBOX2'</action>
+			</button>
+		</hbox>
+		<hbox>
+			<button ok></button>
+			<button cancel></button>
+		</hbox>
+	</vbox>
+</window>
+'
+export MAIN_DIALOG
+
+case $1 in
+	-d | --dump) echo "$MAIN_DIALOG" ;;
+	*) $GTKDIALOG --program=MAIN_DIALOG ;;
+esac

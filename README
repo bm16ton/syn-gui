@@ -1,0 +1,16 @@
+Simple gui for synclient a synaptics touchpad commandline config utility
+
+to install
+
+first you need gtkdialog if you dont have that installed then
+
+sudo ./install-gtkdialog.sh
+
+then install script
+
+sudo ./install.sh
+
+to uninstall
+
+sudo ./uninstall.sh
+

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon=syngui
+Icon[en_US]=syngui.png
+Name[en_US]=syngui
+Exec=bash -c "/usr/local/lib/syngui"
+Categories=GNOME;GTK;Utility;System
+Comment[en_US]=gui for synaptic touchpad synclient
+Name=syngui
+Comment=gui for synaptic touchpad synclient
