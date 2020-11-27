@@ -3,7 +3,7 @@
 GTKDIALOG=gtkdialog
 
 MAIN_DIALOG='
-<window>
+<window title="syngui synaptics config" icon-name="syngui">
 	<vbox>
 		<hbox>
 			<text>
