@@ -1,4 +1,5 @@
 #!/bin/bash
+apt install xserver-xorg-input-synaptics
 mkdir /usr/share/syngui
 cp synlist /usr/share/syngui/
 cp synvar /usr/share/syngui/

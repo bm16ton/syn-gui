@@ -4,7 +4,7 @@ git clone http://github.com/bm16ton/gtkdialog
 cd gtkdialog
 ./switch-to-gcc8.sh
 dpkg-buildpackage -b -j$(nproc)
-dpkg -i ../gtkdialog_0.8.3-3mx17+16_arm64.deb
+dpkg -i gtkdialog*.deb
 ./switch-gcc-back.sh
 cd ..
 
